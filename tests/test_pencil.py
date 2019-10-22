@@ -4,12 +4,12 @@ from paper import Paper
 from eraser import Eraser
 import string
 from unittest import skip
-from pencil_factory import PencilFactory
+import pencil_factory
 
 
 class PencilWritingTests(unittest.TestCase):
     def setUp(self):
-        self.pencil = PencilFactory.get_no2_hb()
+        self.pencil = pencil_factory.get_no2_hb()
         self.paper = Paper()
 
     def test_should_write_text_to_paper(self):
@@ -32,12 +32,12 @@ class PencilPointDegradationTests(unittest.TestCase):
 
     def setUp(self):
         self.paper = Paper()
-        self.pencil = PencilFactory.get_no2_hb()
+        self.pencil = pencil_factory.get_no2_hb()
         self.initial_point_durability = self.pencil.point_durability
 
     def test_should_allow_creation_with_point_durability_field(self):
         self.assertEqual(self.pencil.point_durability,
-                         PencilFactory.NO2_HB_POINT_DURABILITY)
+                         pencil_factory.NO2_HB_POINT_DURABILITY)
 
     def test_should_write_whitespace_if_point_durability_is_zero(self):
         self.pencil.point_durability = 0
@@ -102,11 +102,11 @@ class PencilPointDegradationTests(unittest.TestCase):
 
 class PencilSharpeningTests(unittest.TestCase):
     def setUp(self):
-        self.pencil = PencilFactory.get_no2_hb()
+        self.pencil = pencil_factory.get_no2_hb()
         self.initial_length = self.pencil.length
 
     def test_should_allow_creation_with_length(self):
-        self.assertEqual(self.pencil.length, PencilFactory.NO2_HB_LENGTH)
+        self.assertEqual(self.pencil.length, pencil_factory.NO2_HB_LENGTH)
 
     def test_should_reduce_length_by_one_when_sharpened(self):
         self.pencil.sharpen()
@@ -135,7 +135,7 @@ class PencilEditingTests(unittest.TestCase):
 
     def setUp(self):
         self.paper = Paper()
-        self.pencil = PencilFactory.get_no2_hb()
+        self.pencil = pencil_factory.get_no2_hb()
 
     def test_should_append_to_end_of_paper_when_editing_if_paper_has_never_been_erased(self):
         self.paper.text = 'Hello '
