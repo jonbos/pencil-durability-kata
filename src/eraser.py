@@ -2,12 +2,12 @@ from src.pencil import Pencil
 
 
 class Eraser:
-    ERASE_CHAR=' '
-    
+    ERASE_CHAR = ' '
+
     def __init__(self, durability):
         self.durability = durability
 
-    def erase(self,text,paper):
+    def erase(self, text, paper):
         index = paper.text.rfind(text)
 
         if index < 0:
@@ -18,7 +18,7 @@ class Eraser:
             self._erase_char(paper, index + i)
 
     def _erase_char(self, paper, index):
-        if self.durability == 0 or index>=len(paper.text):
+        if self.durability == 0 or index >= len(paper.text):
             return
 
         self.durability -= self._calculate_erase_cost(paper.text[index])
