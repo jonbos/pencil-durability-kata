@@ -1,5 +1,5 @@
 import unittest
-import pencil_factory
+from src import pencil_factory
 
 
 class Number2HBPencilFactoryTests(unittest.TestCase):

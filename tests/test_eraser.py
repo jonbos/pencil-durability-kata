@@ -1,6 +1,6 @@
 import unittest
-from eraser import Eraser
-from paper import Paper
+from src.eraser import Eraser
+from src.paper import Paper
 import string
 
 

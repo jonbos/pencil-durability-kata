@@ -1,5 +1,5 @@
-from pencil import Pencil
-from eraser import Eraser
+from src.pencil import Pencil
+from src.eraser import Eraser
 
 NO2_HB_POINT_DURABILITY = 4860
 NO2_HB_LENGTH = 44

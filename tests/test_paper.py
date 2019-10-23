@@ -1,5 +1,5 @@
 import unittest
-from paper import Paper
+from src.paper import Paper
 
 
 class PaperCreationTests(unittest.TestCase):

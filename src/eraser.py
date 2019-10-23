@@ -1,4 +1,4 @@
-from pencil import Pencil
+from src.pencil import Pencil
 
 
 class Eraser:

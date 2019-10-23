@@ -1,10 +1,7 @@
 import unittest
-from pencil import Pencil
-from paper import Paper
-from eraser import Eraser
-import string
-from unittest import skip
-import pencil_factory
+from src.pencil import Pencil
+from src.paper import Paper
+from src import pencil_factory
 
 
 class PencilWritingTests(unittest.TestCase):
