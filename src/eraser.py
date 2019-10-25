@@ -14,7 +14,7 @@ class Eraser:
             return
 
         # Step backward from the end of text to be erased
-        for i in range(len(text) - 1, -1, -1):
+        for i in reversed(range(0, len(text))):
             self._erase_char(paper, index + i)
 
     def _erase_char(self, paper, index):
