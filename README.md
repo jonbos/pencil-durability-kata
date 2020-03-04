@@ -24,5 +24,3 @@ A quick search turned up [this volunteer effort](http://towriteamockingbird.blog
 - The average word length of the first chapter of the text is 4.7 characters and 3.4% of those characters are capital letters or digits, thus the pencil writes approximately 160 capital and 4540 lowercase letters per sharpening. That equates to 4860 units of durability by the degradation rules in the kata.
 
 A length value of 44 was chosen - this brings a real life pencil to a barely usable 2". The chosen point durability reflects the results of the volunteer project. The eraser durability is based on the idealistic assumption that a pencil's eraser is durable enough to erase every character written by the pencil.
-
-**I had a blast working on this and I'm really looking forward to your feedback! Thanks!**
